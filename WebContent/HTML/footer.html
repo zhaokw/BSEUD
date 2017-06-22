@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- This is a template page with EasyUI Datagrid and a fixed footer to show important stats  -->
+<!-- EasyUI helps the programmer to get rid of the tedious JQuery code and easily connect to a json data source, like from a Servlet -->
+<!-- Here I use a json template from JsonDemo.json. You can open this file to see how to send json message from Servlets so that EasyUI would auto-parse it into a well-made table! -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Footer Rows in DataGrid - jQuery EasyUI Demo</title>
+	<link rel="stylesheet" type="text/css" href="../easyui/CSS/metro/easyui.css">
+	<link rel="stylesheet" type="text/css" href="../easyui/CSS/icon.css">
+	<script type="text/javascript" src="../easyui/jquery.min.js"></script>
+	<script type="text/javascript" src="../easyui/jquery.easyui.min.js"></script>
+</head>
+<body>
+	<h2>Footer Rows in DataGrid</h2>
+	<p>The summary informations can be displayed in fixed footer rows.</p>
+	<div style="margin:20px 0;"></div>
+	<table class="easyui-datagrid" title="Footer Rows in DataGrid" style="width:800px;height:200px;"
+			data-options="
+				url: 'JsonDemo.json',
+				method: 'get',
+				fitColumns: true,
+				singleSelect: true,
+				rownumbers: true,
+				showFooter: true
+			">
+		<thead>
+			<tr>
+				<th data-options="field:'StudentId',width:80">Student ID</th>
+				<th data-options="field:'Grade',width:120">Grade</th>
+				<th data-options="field:'status',width:80,align:'right'">Status</th>
+			</tr>
+		</thead>
+	</table>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+@CHARSET "ISO-8859-1";
+body{
+	background-image:url(../Images/2.jpg);
+	background-size:100%;/*so that the image is stretched to take up all display space*/
+	background-attachment:fixed;
+}
+#overlayDiv{
+	position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+#overlayBG{
+	width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    background-color:#e2e2e2;
+    opacity:0.4; /* Black background with opacity */
+}
+#alertBox{
+	position:absolute;
+	width:20%;
+	height:26%;
+	opacity:1;
+	top:0px;
+	left:40%;
+}

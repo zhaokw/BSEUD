@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="../BS/bootstrap.min.css">
+<link rel='stylesheet' href='../CSS/OverlayDemo.css'>
+<script src="../easyui/jquery.min.js"></script>
+<script src="../BS/bootstrap.min.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	<div class='container' id='mainDiv'>
+		<div class='jumbotron'>
+			Here is some content
+			<button class='btn btn-default' onclick='on()'>Show Overlay</button>
+		</div>
+	</div>
+	
+	<div id='overlayDiv'>
+		<div id='overlayBG' onclick='off()'></div>
+		<div class='jumbotron' id='alertBox'>Warning</div>
+	</div>
+</body>
+
+<script>
+	//methods to control the overlaying page 
+	function on(){
+		$('#overlayDiv').css("display","block");		
+	}
+	function off(){
+		$('#overlayDiv').css("display","none");	
+	}
+
+
+</script>
+</html>
